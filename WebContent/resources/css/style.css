@@ -1,0 +1,66 @@
+* {
+	
+}
+
+body {
+	 background-image:url("#{resource['images:bg.png']}");
+}
+
+.all {
+	width: 1024px;
+	margin: 0 auto;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #FFF;
+	border: 8px solid transparent;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	position: relative;
+	background: none repeat scroll 0 0 padding-box white
+}
+
+.tabela {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+h1.titulo {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.button {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.formulario {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.formulario p {
+	width: 300px;
+	height: 40px;
+}
+
+.formulario p span {
+	float: left;
+	margin-top: 5px;
+}
+
+.formulario p input {
+	float: right;
+}
+
+.formulario p select {
+	float: right;
+}
+
+.botao {
+	margin-right: 20px;
+}
