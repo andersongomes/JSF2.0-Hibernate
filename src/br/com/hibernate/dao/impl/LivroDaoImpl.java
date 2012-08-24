@@ -9,6 +9,12 @@ import br.com.hibernate.dao.LivroDao;
 import br.com.hibernate.model.Livro;
 import br.com.hibernate.utils.HibernateUtil;
 
+/**@
+ * 
+ * @author Anderson Gomes
+ *
+ */
+
 public class LivroDaoImpl implements LivroDao {
 	
 	public void save(Livro livro) {

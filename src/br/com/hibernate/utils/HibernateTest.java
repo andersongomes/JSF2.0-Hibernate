@@ -6,7 +6,11 @@ import org.hibernate.Session;
 
 import br.com.hibernate.model.Livro;
 
-
+/**@
+ * 
+ * @author Anderson Gomes
+ *
+ */
 
 public class HibernateTest {
 

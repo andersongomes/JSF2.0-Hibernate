@@ -5,6 +5,12 @@ import org.hibernate.cfg.AnnotationConfiguration;
 
 import br.com.hibernate.model.Livro;
 
+/**@
+ * 
+ * @author Anderson Gomes
+ *
+ */
+
 public class HibernateUtil {
 
     private static SessionFactory sessionFactory;

@@ -4,6 +4,12 @@ import java.util.List;
 
 import br.com.hibernate.model.Livro;
 
+/**@
+ * 
+ * @author Anderson Gomes
+ *
+ */
+
 public interface LivroDao {
 	public void save(Livro livro);
 	public Livro getLivro(long id);

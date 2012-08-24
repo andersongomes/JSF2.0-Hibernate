@@ -11,6 +11,12 @@ import br.com.hibernate.dao.LivroDao;
 import br.com.hibernate.dao.impl.LivroDaoImpl;
 import br.com.hibernate.model.Livro;
 
+/**@
+ * 
+ * @author Anderson Gomes
+ *
+ */
+
 @ManagedBean
 @SessionScoped
 public class LivroController {
