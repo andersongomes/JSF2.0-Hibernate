@@ -54,23 +54,27 @@
 	                </f:facet>
 	                <h:outputText value="#{livro.avaliacao}"/>
 	            </h:column>
-	            <h:column>
+	            <h:column styleClass="textAction">
 	                <f:facet name="header">
-	                    <h:outputText value="Alterar"/>
+	                	<div style="text-align: center;">
+		                    <h:outputText value="Alterar"/>
+						</div>
 	                </f:facet>
-	                <h:form>
-	                    <h:commandLink action="#{livroController.prepararAlterarLivro}">
+	                <h:form styleClass="linkAction" >
+	                    <h:commandLink styleClass="actions" action="#{livroController.prepararAlterarLivro}">
 	                    	<h:graphicImage alt="Editar" url="/resources/images/edit.png"></h:graphicImage>
 	                    </h:commandLink>
 	                </h:form>
 	            </h:column>
 	            <h:column>
 	                <f:facet name="header">
-	                    <h:outputText value="Excluir"/>
+	                    <div style="text-align: center;">
+	                    	<h:outputText value="Excluir"/>
+	                    </div>
 	                </f:facet>
-	                <h:form>
-	                	<h:commandLink action="#{livroController.excluirLivro}">
-	                		<h:graphicImage alt="Editar" url="/resources/images/delete.png"></h:graphicImage>
+	                <h:form styleClass="linkAction">
+	                	<h:commandLink styleClass="actions" action="#{livroController.excluirLivro}">
+	                		<h:graphicImage alt="Excluir" url="/resources/images/delete.png"></h:graphicImage>
 	                	</h:commandLink>
 	                </h:form>
 	            </h:column>

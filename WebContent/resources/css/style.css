@@ -3,12 +3,12 @@
 }
 
 body {
-	 background-image:url("#{resource['images:bg.png']}");
+	background-image: url("#{resource['images:bg.png']}");
 }
 
 .all {
 	width: 1024px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	background-color: #FFF;
@@ -25,11 +25,13 @@ body {
 }
 
 h1.titulo {
-	width: 90%;
-	margin: 0 auto;
+	width: 430px;
+	font-size: 25px;
+	margin-left: 60px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #424242;
+	text-transform: uppercase;
 }
 
 .button {
@@ -39,9 +41,9 @@ h1.titulo {
 }
 
 .formulario {
-	width: 90%;
-	margin: 0 auto;
+	width: 430px;
 	margin-bottom: 20px;
+	margin-left: 60px;
 }
 
 .formulario p {
@@ -64,4 +66,20 @@ h1.titulo {
 
 .botao {
 	margin-right: 20px;
+}
+
+.tabela form {
+	margin: 0 !important;
+}
+
+form.linkAction {
+	height: 20px !important;
+	margin-top: -7px !important;
+	margin-right: 5px !important;
+	text-align: center;
+}
+
+.books{
+	margin-top: -450px;
+	margin-left: 600px;
 }
