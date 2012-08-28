@@ -18,73 +18,77 @@
     <h:body>
     	<div class="all">
 	        <h1 class="titulo">Gerenciador de Livros</h1>
-	        <h:dataTable  styleClass="tabela table table-bordered" var="livro" value="#{livroController.listarLivros}">
-	            <h:column>
-	                <f:facet name="header">
-	                    <h:outputText value="Título"/>
-	                </f:facet>
-	                <h:outputText value="#{livro.titulo}" />
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
-	                    <h:outputText value="Autor"/>
-	                </f:facet>
-	                <h:outputText value="#{livro.autor}"/>
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
-	                    <h:outputText value="Páginas"/>
-	                </f:facet>
-	                <h:outputText value="#{livro.paginas}"/>
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
+	
+        	<p:dataTable id="dataTable" var="livro" value="#{livroController.listarLivros}" paginator="true" rows="5">
+        		<p:column>
+        			<f:facet name="header">
+                    <h:outputText value="Título"/>
+              			</f:facet>
+                	<h:outputText value="#{livro.titulo}" />
+        		</p:column>
+        		<p:column>
+        			<f:facet name="header">
+                    <h:outputText value="Autor"/>
+		                </f:facet>
+		            <h:outputText value="#{livro.autor}"/>
+        		</p:column>
+        		<p:column>
+        			<f:facet name="header">
+                    <h:outputText value="Páginas"/>
+		                </f:facet>
+		            <h:outputText value="#{livro.paginas}"/>
+        		</p:column>
+        		<p:column>
+        			<f:facet name="header">
 	                    <h:outputText value="Editora"/>
 	                </f:facet>
 	                <h:outputText value="#{livro.editora}"/>
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
+        		</p:column>
+        		<p:column>
+        			<f:facet name="header">
 	                    <h:outputText value="Isbn"/>
 	                </f:facet>
 	                <h:outputText value="#{livro.isbn}"/>
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
-	                    <h:outputText value="Avaliação"/>
-	                </f:facet>
-	                <h:outputText value="#{livro.avaliacao}"/>
-	            </h:column>
-	            <h:column styleClass="textAction">
-	                <f:facet name="header">
+        		</p:column>
+        		<p:column>
+        			<f:facet name="header">
+                   		<h:outputText value="Avaliação"/>
+                	</f:facet>
+                	<h:outputText value="#{livro.avaliacao}"/>
+        		</p:column>
+        		<p:column style="width: 5%;">
+        			<f:facet name="header">
 	                	<div style="text-align: center;">
 		                    <h:outputText value="Alterar"/>
 						</div>
 	                </f:facet>
-	                <h:form styleClass="linkAction" >
-	                    <h:commandLink styleClass="actions" action="#{livroController.prepararAlterarLivro}">
-	                    	<h:graphicImage alt="Editar" url="/resources/images/edit.png"></h:graphicImage>
+	                <h:form>
+	                    <h:commandLink action="#{livroController.prepararAlterarLivro}">
+	                    	<h:graphicImage styleClass="linkAction" alt="Editar" url="/resources/images/edit.png"></h:graphicImage>
 	                    </h:commandLink>
 	                </h:form>
-	            </h:column>
-	            <h:column>
-	                <f:facet name="header">
+        		</p:column>
+        		<p:column style="width: 5%;">
+        			<f:facet name="header">
 	                    <div style="text-align: center;">
 	                    	<h:outputText value="Excluir"/>
 	                    </div>
 	                </f:facet>
-	                <h:form styleClass="linkAction">
-	                	<h:commandLink styleClass="actions" action="#{livroController.excluirLivro}">
-	                		<h:graphicImage alt="Excluir" url="/resources/images/delete.png"></h:graphicImage>
+	                <h:form>
+	                	<h:commandLink action="#{livroController.excluirLivro}">
+	                		<h:graphicImage styleClass="linkAction" alt="Excluir" url="/resources/images/delete.png"></h:graphicImage>
 	                	</h:commandLink>
 	                </h:form>
-	            </h:column>
-	        </h:dataTable>
-	        <br/>
-	        
-	        <h:form styleClass="button">
+        		</p:column>
+        		
+        	</p:dataTable>
+        	
+        	<br/>
+        	
+        	<h:form styleClass="button">
 	            <h:commandLink styleClass="btn btn-success" value="Novo Livro" action="#{livroController.prepararAdicionarLivro}"/>
 	        </h:form>
+	       
 		</div>
     </h:body>
 </html>
