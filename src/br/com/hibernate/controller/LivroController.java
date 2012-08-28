@@ -43,12 +43,12 @@ public class LivroController {
 
     public String prepararAdicionarLivro(){
         livro = new Livro();
-        return "gerenciarLivro";
+        return "adicionarLivro";
     }
 
     public String prepararAlterarLivro(){
         livro = (Livro)(listaLivros.getRowData());
-        return "gerenciarLivro";
+        return "alterarLivro";
     }
 
     public String excluirLivro(){
